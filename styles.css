@@ -1,1 +1,51 @@
-/*  your css code here. If applicable */
+/* Set the entire page's background color */
+        :root {
+            --page-bg-color: rgb(135, 206, 235);
+        }
+
+        body {
+            background-color: var(--page-bg-color);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Article with Paragraphs */
+        article p:first-child {
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+
+        article p:nth-child(2) {
+            color: black; /* Standard text color */
+        }
+
+        article p:last-child {
+            color: red;
+        }
+
+        /* Unordered List */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: gray;
+            width: 50%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: white;
+        }
+
+        ul li:first-child,
+        ul li:last-child {
+            font-size: 22px;
+        }
+
+        ul li:nth-last-child(3) {
+            background-color: pink;
+        }
